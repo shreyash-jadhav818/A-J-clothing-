@@ -1,146 +1,213 @@
- 
- @import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap');
- 
- @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Jersey+15&family=Kaushan+Script&family=Lexend+Giga:wght@100..900&display=swap');
- 
- *{
-    margin: 0;
-    padding: 0;
-   
-    box-sizing: border-box;
- }
- html,body{
-    width: 100%;
-    height: 100%;
-     
- }
-#main{ 
-   height:100%;
-   width: 100%;
-   background-color:rgb(red, rgb(0, 0, 0), blue);
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Jersey+15&family=Kaushan+Script&family=Lexend+Giga:wght@100..900&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
-#nav{
+
+html, body {
+   width: 100%;
+   height: 100%;
+}
+
+#main {
+   height: 100%;
+   width: 100%;
+   background-color: rgb(red, rgb(0, 0, 0), blue);
+}
+
+#nav {
    height: 100px;
    width: 100%;
-   background-color:black(red, green, blue) ;
+   background-color: black;
    display: flex;
    align-items: center;
    justify-content: flex-end;
    gap: 30px;
    padding: 0 30px;
-   background-color: black;
-
 }
-#nav h4:hover{
-   font-size:23px;
-   color:red;
 
+#nav h4:hover {
+   font-size: 23px;
+   color: red;
 }
-#nav h4{
+
+#nav h4 {
    font-size: 20px;
-   font-weight :600;
+   font-weight: 600;
    color: aliceblue;
-
 }
-#nav i{
+
+#nav i {
    background-color: rgb(255, 255, 255);
    border-radius: 50%;
    color: #050505d8;
    padding: 10px;
    font-weight: 10px;
    font-size: 20px;
-   
 }
-#nav i:hover{
 
-   font-size:25px ;
+#nav i:hover {
+   font-size: 25px;
    background-color: rgb(228, 0, 0);
-
 }
-#center{
+
+#center {
    font-family: "Lexend Giga", serif;
-    width: 100%;
+   width: 100%;
    background-color: white;
    padding: 30px 50px;
 }
-#center h1{
-   /* font-size: 50px; */
-   font: size 4.3vw; 
+
+#center h1 {
+   font-size: 4.3vw;
    font-weight: 500;
    line-height: 4.3vw;
 }
-#center-in{
-   background-color: white(246, 242, 242);
+
+#center-in {
+   background-color: white;
    width: 100%;
    margin-top: 42px;
    display: flex;
    justify-content: space-between;
-
-
 }
-#center-in p{
+
+#center-in p {
    font-size: 1.5vw;
    font-weight: 600;
    line-height: 30px;
 }
-#right{
+
+#right {
    width: 20%;
 }
-.elem{
+
+.elem {
    padding: 20px 0;
    border-top: 2px solid black;
    display: flex;
-   align-item:center;
-   justify-content:space-between;
- 
+   align-items: center;
+   justify-content: space-between;
 }
-.elem a{
+
+.elem a {
    color: black;
    text-decoration: none;
    font-weight: 600;
-
 }
-.elem:hover i{
+
+.elem:hover i {
    opacity: 1;
-   font-size: 20px
-
+   font-size: 20px;
 }
-.elem:hover{
+
+.elem:hover {
    background-color: antiquewhite;
 }
+
 video {
    width: 100%;
    height: 50%;
-   object-fit:cover;
-   background-size:cover;
- } 
-#nav form:hover{
-   background-color: rgb(13, 19, 19);
-
+   object-fit: cover;
+   background-size: cover;
 }
-#nav form:hover
-{
+
+#nav form:hover {
+   background-color: rgb(13, 19, 19);
+}
+
+#nav form:hover {
    font-size: 20px;
 }
-#nav h1{
+
+#nav h1 {
    font-size: 55px;
    display: flex;
    align-items: flex-end;
    margin-right: 500px;
-  color: white;
-  font-family: "Kaushan Script", serif;
+   color: white;
+   font-family: "Kaushan Script", serif;
 }
-#nav h1:hover{
+
+#nav h1:hover {
    background-color: rgb(239, 8, 8);
- 
 }
-#nav p{
-   font-size:25px ;
+
+#nav p {
+   font-size: 25px;
 }
-form input{
+
+form input {
    font-size: 20px;
    border-radius: 15px;
 }
-@media (max-width:600px) {
-   
+
+/* Mobile responsiveness (max-width: 600px) */
+@media (max-width: 600px) {
+   #nav {
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+      height: auto;
+   }
+
+   #nav h1 {
+      font-size: 30px;
+      margin-right: 0;
+      text-align: center;
+   }
+
+   #nav h4 {
+      font-size: 16px;
+   }
+
+   #center {
+      padding: 20px;
+   }
+
+   #center h1 {
+      font-size: 7vw;
+      line-height: 7vw;
+   }
+
+   #center-in {
+      flex-direction: column;
+      gap: 20px;
+   }
+
+   #center-in p {
+      font-size: 4vw;
+      font-weight: 500;
+   }
+
+   .elem {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 15px 0;
+   }
+
+   .elem a {
+      font-size: 16px;
+   }
+
+   #right {
+      width: 100%;
+   }
+
+   video {
+      height: auto;
+      max-height: 60%;
+   }
+
+   form input {
+      font-size: 18px;
+      width: 100%;
+   }
+
+   /* Hide any extra elements or adjust styling for a better mobile view */
 }
